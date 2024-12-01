@@ -1,0 +1,16 @@
+<suite name="All Test Suite">
+    <test name="Test with browser parameter">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.CareersTest">
+                <methods>
+                    <include name="testCase1_CheckHomePageOpened"/>
+                    <include name="testCase2_CheckCareersPageAndSections"/>
+                    <include name="testCase3_FilterQAJobsByLocationAndDepartment"/>
+                    <include name="testCase4_VerifyJobDetails"/>
+                    <include name="testCase5_CheckLeverApplicationForm"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
