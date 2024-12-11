@@ -1,16 +1,17 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class CareersPage {
     WebDriver driver;
 
-    // Locators
-    private By locationsBlock = By.id("locations");
-    private By teamsBlock = By.id("teams");
-    private By lifeAtInsiderBlock = By.id("life-at-insider");
-    private By qaJobsLink = By.xpath("//a[contains(@href, '/quality-assurance')]");
+    private By teams = By.xpath("//h3[@class='category-title-media' and contains(text(), 'Find your calling')]");
+    private By locations = By.xpath("//*[@id=\"career-our-location\"]/div/div/div/div[1]/h3");
+    private By lifeAtInsider = By.xpath("//h2[@class='elementor-heading-title elementor-size-default' and text()='Life at Insider']");
+    private By job = By.xpath("//*[@id=\"find-job-widget\"]/div/div/div[1]/h3");
 
     // Constructor
     public CareersPage(WebDriver driver) {
@@ -19,12 +20,30 @@ public class CareersPage {
 
     // Actions
     public boolean areCareerSectionsDisplayed() {
-        return driver.findElement(locationsBlock).isDisplayed() &&
-                driver.findElement(teamsBlock).isDisplayed() &&
-                driver.findElement(lifeAtInsiderBlock).isDisplayed();
+        try {
+
+            scrollToElement(driver.findElement(teams));
+            boolean teamsDisplayed = driver.findElement(teams).isDisplayed();
+
+            scrollToElement(driver.findElement(locations));
+            boolean locationsDisplayed = driver.findElement(locations).isDisplayed();
+
+            scrollToElement(driver.findElement(lifeAtInsider));
+            boolean lifeAtInsiderDisplayed = driver.findElement(lifeAtInsider).isDisplayed();
+
+            scrollToElement(driver.findElement(job));
+            boolean jobDisplayed = driver.findElement(job).isDisplayed();
+
+            return locationsDisplayed && teamsDisplayed && lifeAtInsiderDisplayed && jobDisplayed;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 
-    public void navigateToQAJobs() {
-        driver.findElement(qaJobsLink).click();
+    // Helper Method: Scroll to an element
+    private void scrollToElement(WebElement element) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", element);
     }
 }

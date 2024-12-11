@@ -32,17 +32,18 @@ public class CareersTest extends BaseTest {
 
     @Test
     public void testCase3_FilterQAJobsByLocationAndDepartment() {
-        CareersPage careersPage = new CareersPage(driver);
         QAJobsPage qaJobsPage = new QAJobsPage(driver);
 
         // Step 1: Navigate to QA Jobs page
         driver.get("https://useinsider.com/careers/quality-assurance/");
 
+        qaJobsPage.goAllQAJobs();
+
         // Step 2: Filter jobs
         qaJobsPage.filterJobs("Istanbul, Turkey", "Quality Assurance");
 
         // Step 3: Verify job list is present
-        Assert.assertFalse(qaJobsPage.areJobsFilteredCorrectly("Istanbul, Turkey", "Quality Assurance"),
+        Assert.assertTrue(qaJobsPage.areJobsFilteredCorrectly("Istanbul, Turkey", "Quality Assurance"),
                 "No QA jobs are present for the selected location and department!");
     }
 
@@ -53,8 +54,10 @@ public class CareersTest extends BaseTest {
         // Step 1: Navigate to QA Jobs page
         driver.get("https://useinsider.com/careers/quality-assurance/");
 
+        qaJobsPage.goAllQAJobs();
+
         // Step 2: Filter jobs
-        qaJobsPage.filterJobs("Istanbul, Turkey", "Quality Assurance");
+        qaJobsPage.filterJobs("All", "Quality Assurance");
 
         // Step 3: Verify each job's details (Position, Department, Location)
         Assert.assertTrue(qaJobsPage.areJobsFilteredCorrectly("Istanbul, Turkey", "Quality Assurance"),
@@ -62,17 +65,17 @@ public class CareersTest extends BaseTest {
     }
 
     @Test
-    public void testCase5_CheckLeverApplicationForm() {
+    public void testCase5_CheckLeverApplicationForm() throws InterruptedException {
         QAJobsPage qaJobsPage = new QAJobsPage(driver);
 
         // Step 1: Navigate to QA Jobs page
         driver.get("https://useinsider.com/careers/quality-assurance/");
+        qaJobsPage.goAllQAJobs();
+        qaJobsPage.filterJobs("All", "Quality Assurance");
 
         // Step 2: Click 'View Role' button for the first job
-        qaJobsPage.clickViewRole();
+        qaJobsPage.hoverAndClickViewRole();
 
-        // Step 3: Verify Lever application form is opened
-        Assert.assertTrue(qaJobsPage.isApplicationFormOpened(),
-                "Lever application form page did not open!");
+        qaJobsPage.verifyRedirectedURLInNewTab();
     }
 }

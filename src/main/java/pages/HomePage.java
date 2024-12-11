@@ -7,8 +7,8 @@ public class HomePage {
     WebDriver driver;
 
     // Locators
-    private By companyMenu = By.xpath("//nav//a[text()='Company']");
-    private By careersOption = By.xpath("//nav//a[text()='Careers']");
+    private By companyMenu = By.xpath("//a[@id='navbarDropdownMenuLink' and contains(text(), 'Company')]");
+    private By careersOption = By.xpath("//a[contains(@href, '/careers/') and text()='Careers']");
 
     // Constructor
     public HomePage(WebDriver driver) {
