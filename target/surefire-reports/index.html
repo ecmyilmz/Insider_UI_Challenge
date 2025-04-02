@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-tests_CareersTest" class="navigator-link">
-              <span class="suite-name border-skipped">tests.CareersTest</span>
+            <a href="#" panel-name="suite-All_Test_Suite" class="navigator-link">
+              <span class="suite-name border-failed">All Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-tests_CareersTest" class="navigator-link ">
-                    <span>[unset file name]</span>
+                  <a href="#" panel-name="test-xml-All_Test_Suite" class="navigator-link ">
+                    <span>testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-tests_CareersTest" class="navigator-link ">
+                  <a href="#" panel-name="testlist-All_Test_Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-tests_CareersTest" class="navigator-link ">
+                  <a href="#" panel-name="group-All_Test_Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-tests_CareersTest" class="navigator-link ">
+                  <a href="#" panel-name="times-All_Test_Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-tests_CareersTest" class="navigator-link ">
+                  <a href="#" panel-name="reporter-All_Test_Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-tests_CareersTest" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-All_Test_Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-tests_CareersTest" class="navigator-link ">
+                  <a href="#" panel-name="chronological-All_Test_Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,41 +92,50 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,  5 skipped,  </span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-tests_CareersTest" class="hide-methods skipped suite-tests_CareersTest"> (hide)</a> <!-- hide-methods skipped suite-tests_CareersTest -->
-                      <a href="#" panel-name="suite-tests_CareersTest" class="show-methods skipped suite-tests_CareersTest"> (show)</a> <!-- show-methods skipped suite-tests_CareersTest -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods failed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods failed suite-All_Test_Suite"> (show)</a> <!-- show-methods failed suite-All_Test_Suite -->
                     </span>
-                    <div class="method-list-content skipped suite-tests_CareersTest">
+                    <div class="method-list-content failed suite-All_Test_Suite">
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-tests_CareersTest" title="tests.CareersTest" class="method navigator-link" hash-for-method="testCase1_CheckHomePageOpened">testCase1_CheckHomePageOpened</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.CareersTest" class="method navigator-link" hash-for-method="testCase5_CheckLeverApplicationForm">testCase5_CheckLeverApplicationForm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-All_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods passed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods passed suite-All_Test_Suite"> (show)</a> <!-- show-methods passed suite-All_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-All_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.CareersTest" class="method navigator-link" hash-for-method="testCase1_CheckHomePageOpened">testCase1_CheckHomePageOpened</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-tests_CareersTest" title="tests.CareersTest" class="method navigator-link" hash-for-method="testCase2_CheckCareersPageAndSections">testCase2_CheckCareersPageAndSections</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.CareersTest" class="method navigator-link" hash-for-method="testCase2_CheckCareersPageAndSections">testCase2_CheckCareersPageAndSections</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-tests_CareersTest" title="tests.CareersTest" class="method navigator-link" hash-for-method="testCase3_FilterQAJobsByLocationAndDepartment">testCase3_FilterQAJobsByLocationAndDepartment</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.CareersTest" class="method navigator-link" hash-for-method="testCase3_FilterQAJobsByLocationAndDepartment">testCase3_FilterQAJobsByLocationAndDepartment</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-tests_CareersTest" title="tests.CareersTest" class="method navigator-link" hash-for-method="testCase4_VerifyJobDetails">testCase4_VerifyJobDetails</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.CareersTest" class="method navigator-link" hash-for-method="testCase4_VerifyJobDetails">testCase4_VerifyJobDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-tests_CareersTest" title="tests.CareersTest" class="method navigator-link" hash-for-method="testCase5_CheckLeverApplicationForm">testCase5_CheckLeverApplicationForm</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-tests_CareersTest -->
+                    </div> <!-- method-list-content passed suite-All_Test_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -137,10 +146,31 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-tests_CareersTest" class="panel tests_CareersTest">
-          <div class="suite-tests_CareersTest-class-skipped">
+        <div panel-name="suite-All_Test_Suite" class="panel All_Test_Suite">
+          <div class="suite-All_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">tests.CareersTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase5_CheckLeverApplicationForm">
+                  </a> <!-- testCase5_CheckLeverApplicationForm -->
+                  <span class="method-name">testCase5_CheckLeverApplicationForm</span>
+                  <div class="stack-trace">java.lang.AssertionError: The redirected URL is incorrect! expected [true] but found [false]
+	at pages.QAJobsPage.verifyRedirectedURLInNewTab(QAJobsPage.java:129)
+	at tests.CareersTest.testCase5_CheckLeverApplicationForm(CareersTest.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">tests.CareersTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -149,12 +179,6 @@
                   <a name="testCase1_CheckHomePageOpened">
                   </a> <!-- testCase1_CheckHomePageOpened -->
                   <span class="method-name">testCase1_CheckHomePageOpened</span>
-                  <div class="stack-trace">org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by BeforeMethod on method setup but has not been marked @Optional or defined
-
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 37 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -162,12 +186,6 @@ Parameter &apos;browser&apos; is required by BeforeMethod on method setup but ha
                   <a name="testCase2_CheckCareersPageAndSections">
                   </a> <!-- testCase2_CheckCareersPageAndSections -->
                   <span class="method-name">testCase2_CheckCareersPageAndSections</span>
-                  <div class="stack-trace">org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by BeforeMethod on method setup but has not been marked @Optional or defined
-
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 37 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -175,12 +193,6 @@ Parameter &apos;browser&apos; is required by BeforeMethod on method setup but ha
                   <a name="testCase3_FilterQAJobsByLocationAndDepartment">
                   </a> <!-- testCase3_FilterQAJobsByLocationAndDepartment -->
                   <span class="method-name">testCase3_FilterQAJobsByLocationAndDepartment</span>
-                  <div class="stack-trace">org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by BeforeMethod on method setup but has not been marked @Optional or defined
-
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 37 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -188,75 +200,66 @@ Parameter &apos;browser&apos; is required by BeforeMethod on method setup but ha
                   <a name="testCase4_VerifyJobDetails">
                   </a> <!-- testCase4_VerifyJobDetails -->
                   <span class="method-name">testCase4_VerifyJobDetails</span>
-                  <div class="stack-trace">org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by BeforeMethod on method setup but has not been marked @Optional or defined
-
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 37 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCase5_CheckLeverApplicationForm">
-                  </a> <!-- testCase5_CheckLeverApplicationForm -->
-                  <span class="method-name">testCase5_CheckLeverApplicationForm</span>
-                  <div class="stack-trace">org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by BeforeMethod on method setup but has not been marked @Optional or defined
-
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 37 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-tests_CareersTest-class-skipped -->
-        </div> <!-- panel tests_CareersTest -->
-        <div panel-name="test-xml-tests_CareersTest" class="panel">
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+        </div> <!-- panel All_Test_Suite -->
+        <div panel-name="test-xml-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/ecemyilmaz/Desktop/Insider/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;tests.CareersTest&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Command line test&quot; verbose=&quot;0&quot;&gt;
+&lt;suite name=&quot;All Test Suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test with browser parameter&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.CareersTest&quot;/&gt;
+      &lt;class name=&quot;tests.CareersTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testCase1_CheckHomePageOpened&quot;/&gt;
+          &lt;include name=&quot;testCase2_CheckCareersPageAndSections&quot;/&gt;
+          &lt;include name=&quot;testCase3_FilterQAJobsByLocationAndDepartment&quot;/&gt;
+          &lt;include name=&quot;testCase4_VerifyJobDetails&quot;/&gt;
+          &lt;include name=&quot;testCase5_CheckLeverApplicationForm&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- tests.CareersTest --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Command line test --&gt;
-&lt;/suite&gt; &lt;!-- tests.CareersTest --&gt;
+  &lt;/test&gt; &lt;!-- Test with browser parameter --&gt;
+&lt;/suite&gt; &lt;!-- All Test Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-tests_CareersTest" class="panel">
+        <div panel-name="testlist-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for tests.CareersTest</span>
+            <span class="header-content">Tests for All Test Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Command line test (1 class)</span>
+                <span class="test-name">Test with browser parameter (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-tests_CareersTest" class="panel">
+        <div panel-name="group-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for tests.CareersTest</span>
+            <span class="header-content">Groups for All Test Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-tests_CareersTest" class="panel">
+        <div panel-name="times-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for tests.CareersTest</span>
+            <span class="header-content">Times for All Test Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_tests_CareersTest');
-function tableData_tests_CareersTest() {
+suiteTableInitFunctions.push('tableData_All_Test_Suite');
+function tableData_All_Test_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
@@ -264,54 +267,118 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testCase4_VerifyJobDetails')
+data.setCell(0, 1, 'testCase5_CheckLeverApplicationForm')
 data.setCell(0, 2, 'tests.CareersTest')
-data.setCell(0, 3, 0);
+data.setCell(0, 3, 34139);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testCase2_CheckCareersPageAndSections')
+data.setCell(1, 1, 'testCase4_VerifyJobDetails')
 data.setCell(1, 2, 'tests.CareersTest')
-data.setCell(1, 3, 0);
+data.setCell(1, 3, 3753);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testCase1_CheckHomePageOpened')
+data.setCell(2, 1, 'testCase3_FilterQAJobsByLocationAndDepartment')
 data.setCell(2, 2, 'tests.CareersTest')
-data.setCell(2, 3, 0);
+data.setCell(2, 3, 3124);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testCase3_FilterQAJobsByLocationAndDepartment')
+data.setCell(3, 1, 'testCase2_CheckCareersPageAndSections')
 data.setCell(3, 2, 'tests.CareersTest')
-data.setCell(3, 3, 0);
+data.setCell(3, 3, 3069);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testCase5_CheckLeverApplicationForm')
+data.setCell(4, 1, 'testCase1_CheckHomePageOpened')
 data.setCell(4, 2, 'tests.CareersTest')
-data.setCell(4, 3, 0);
-window.suiteTableData['tests_CareersTest']= { tableData: data, tableDiv: 'times-div-tests_CareersTest'}
+data.setCell(4, 3, 8);
+window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
-              <div id="times-div-tests_CareersTest">
-              </div> <!-- times-div-tests_CareersTest -->
+              <span class="suite-total-time">Total running time: 44 seconds</span>
+              <div id="times-div-All_Test_Suite">
+              </div> <!-- times-div-All_Test_Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-tests_CareersTest" class="panel">
+        <div panel-name="reporter-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for tests.CareersTest</span>
+            <span class="header-content">Reporter output for All Test Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-tests_CareersTest" class="panel">
+        <div panel-name="ignored-methods-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-tests_CareersTest" class="panel">
+        <div panel-name="chronological-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CareersTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCase1_CheckHomePageOpened</span>
+                <span class="method-start">36798 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=testCase1_CheckHomePageOpened status=SUCCESS method=CareersTest.testCase1_CheckHome...)</span>
+                <span class="method-start">36808 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">37509 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCase2_CheckCareersPageAndSections</span>
+                <span class="method-start">73292 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=testCase2_CheckCareersPageAndSections status=SUCCESS method=CareersTest.testCase2_C...)</span>
+                <span class="method-start">76361 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">77186 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCase3_FilterQAJobsByLocationAndDepartment</span>
+                <span class="method-start">112897 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=testCase3_FilterQAJobsByLocationAndDepartment status=SUCCESS method=CareersTest.tes...)</span>
+                <span class="method-start">116022 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">116730 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCase4_VerifyJobDetails</span>
+                <span class="method-start">152752 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=testCase4_VerifyJobDetails status=SUCCESS method=CareersTest.testCase4_VerifyJobDet...)</span>
+                <span class="method-start">156505 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">157209 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCase5_CheckLeverApplicationForm</span>
+                <span class="method-start">193321 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=testCase5_CheckLeverApplicationForm status=FAILURE method=CareersTest.testCase5_Che...)</span>
+                <span class="method-start">227463 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

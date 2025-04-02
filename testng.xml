@@ -1,6 +1,6 @@
 <suite name="All Test Suite">
     <test name="Test with browser parameter">
-        <parameter name="browser" value="chrome"/>
+        <parameter name="browser" value="firefox"/>
         <classes>
             <class name="tests.CareersTest"/>
                 <methods>

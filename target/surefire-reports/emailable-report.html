@@ -8,49 +8,19 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">tests.CareersTest</th></tr>
-<tr><td><a href="#t0">Command line test</a></td><td class="num">0</td><td class="num attn">5</td><td class="num">0</td><td class="num">0</td><td class="num">54</td><td></td><td></td></tr>
+<tr><th colspan="8">All Test Suite</th></tr>
+<tr><td><a href="#t0">Test with browser parameter</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">228,246</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">tests.CareersTest</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">tests.CareersTest</td><td><a href="#m0">setup</a></td><td rowspan="1">1733840224651</td><td rowspan="1">-1733840224651</td></tr><tr><th colspan="4">Command line test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="9">tests.CareersTest</td><td><a href="#m1">setup</a></td><td rowspan="4">1733840224668</td><td rowspan="4">0</td></tr><tr class="skippedeven"><td><a href="#m2">setup</a></td></tr><tr class="skippedeven"><td><a href="#m3">setup</a></td></tr><tr class="skippedeven"><td><a href="#m4">setup</a></td></tr><tr class="skippedeven"><td><a href="#m5">teardown</a></td><td rowspan="5">1733840224670</td><td rowspan="5">0</td></tr><tr class="skippedeven"><td><a href="#m6">teardown</a></td></tr><tr class="skippedeven"><td><a href="#m7">teardown</a></td></tr><tr class="skippedeven"><td><a href="#m8">teardown</a></td></tr><tr class="skippedeven"><td><a href="#m9">teardown</a></td></tr><tr><th colspan="4">Command line test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="5">tests.CareersTest</td><td><a href="#m10">testCase1_CheckHomePageOpened</a></td><td rowspan="1">1733840224661</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m11">testCase2_CheckCareersPageAndSections</a></td><td rowspan="1">1733840224666</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m12">testCase3_FilterQAJobsByLocationAndDepartment</a></td><td rowspan="1">1733840224667</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m13">testCase4_VerifyJobDetails</a></td><td rowspan="1">1733840224668</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m14">testCase5_CheckLeverApplicationForm</a></td><td rowspan="1">1733840224670</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">All Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test with browser parameter &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.CareersTest</td><td><a href="#m0">testCase5_CheckLeverApplicationForm</a></td><td rowspan="1">1733917229802</td><td rowspan="1">34139</td></tr><tr><th colspan="4">Test with browser parameter &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">tests.CareersTest</td><td><a href="#m1">testCase1_CheckHomePageOpened</a></td><td rowspan="1">1733917073279</td><td rowspan="1">8</td></tr><tr class="passedeven"><td><a href="#m2">testCase2_CheckCareersPageAndSections</a></td><td rowspan="1">1733917109773</td><td rowspan="1">3069</td></tr><tr class="passedeven"><td><a href="#m3">testCase3_FilterQAJobsByLocationAndDepartment</a></td><td rowspan="1">1733917149378</td><td rowspan="1">3124</td></tr><tr class="passedeven"><td><a href="#m4">testCase4_VerifyJobDetails</a></td><td rowspan="1">1733917189233</td><td rowspan="1">3753</td></tr></tbody>
 </table>
-<h2>Command line test</h2><h3 id="m0">tests.CareersTest#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by BeforeMethod on method setup but has not been marked @Optional or defined
-
+<h2>Test with browser parameter</h2><h3 id="m0">tests.CareersTest#testCase5_CheckLeverApplicationForm</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The redirected URL is incorrect! expected [true] but found [false]
+	at pages.QAJobsPage.verifyRedirectedURLInNewTab(QAJobsPage.java:129)
+	at tests.CareersTest.testCase5_CheckLeverApplicationForm(CareersTest.java:79)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.CareersTest#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">tests.CareersTest#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">tests.CareersTest#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">tests.CareersTest#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">tests.CareersTest#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">tests.CareersTest#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">tests.CareersTest#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">tests.CareersTest#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">tests.CareersTest#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">tests.CareersTest#testCase1_CheckHomePageOpened</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by BeforeMethod on method setup but has not been marked @Optional or defined
-
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">tests.CareersTest#testCase2_CheckCareersPageAndSections</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by BeforeMethod on method setup but has not been marked @Optional or defined
-
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">tests.CareersTest#testCase3_FilterQAJobsByLocationAndDepartment</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by BeforeMethod on method setup but has not been marked @Optional or defined
-
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m13">tests.CareersTest#testCase4_VerifyJobDetails</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by BeforeMethod on method setup but has not been marked @Optional or defined
-
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m14">tests.CareersTest#testCase5_CheckLeverApplicationForm</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by BeforeMethod on method setup but has not been marked @Optional or defined
-
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.CareersTest#testCase1_CheckHomePageOpened</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.CareersTest#testCase2_CheckCareersPageAndSections</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.CareersTest#testCase3_FilterQAJobsByLocationAndDepartment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.CareersTest#testCase4_VerifyJobDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
