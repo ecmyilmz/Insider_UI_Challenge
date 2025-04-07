@@ -71,7 +71,7 @@ public class CareersTest extends BaseTest {
         // Step 1: Navigate to QA Jobs page
         driver.get("https://useinsider.com/careers/quality-assurance/");
         qaJobsPage.goAllQAJobs();
-        qaJobsPage.filterJobs("All", "Quality Assurance");
+        qaJobsPage.filterJob("All", "Quality Assurance");
 
         // Step 2: Click 'View Role' button for the first job
         qaJobsPage.hoverAndClickViewRole();

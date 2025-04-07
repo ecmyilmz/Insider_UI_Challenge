@@ -59,6 +59,40 @@ public class QAJobsPage {
             }
         }
     }
+    public void filterJob(String location, String department) throws InterruptedException {
+        // Location filter alanına tıkla
+        driver.findElement(locationFilter).click();
+
+        // Location listesinde verilen location değerini seç
+        List<WebElement> locations = driver.findElements(locationOptions);
+        for (WebElement loc : locations) {
+            if (loc.getText().equals(location)) {
+                loc.click();
+                break;
+            }
+        }
+
+        // Department filter alanına tıkla
+        driver.findElement(departmentFilter).click();
+
+        // Department listesinde verilen department değerini seç
+        // Scroll yapılabilir dropdown container'ı bul
+        WebElement dropdownContainer = driver.findElement(By.id("select2-filter-by-department-results")); // Bu selector örnektir
+
+        List<WebElement> departments = dropdownContainer.findElements(departmentOptions);
+
+        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+
+        for (WebElement dep : departments) {
+            jsExecutor.executeScript("arguments[0].scrollIntoView(true);", dep);
+            Thread.sleep(200);
+            if (dep.getText().trim().equalsIgnoreCase(department.trim())) {
+                dep.click();
+                break;
+            }
+        }
+
+    }
 
     public boolean areJobsFilteredCorrectly(String location, String department) {
         // Kartları temsil eden listeyi seçmek için locators
